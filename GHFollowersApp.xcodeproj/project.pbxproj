@@ -10,7 +10,6 @@
 		F52B2C472BE66071006ACF7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52B2C462BE66071006ACF7A /* AppDelegate.swift */; };
 		F52B2C492BE66071006ACF7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52B2C482BE66071006ACF7A /* SceneDelegate.swift */; };
 		F52B2C4B2BE66071006ACF7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52B2C4A2BE66071006ACF7A /* ViewController.swift */; };
-		F52B2C4E2BE66071006ACF7A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F52B2C4D2BE66071006ACF7A /* Base */; };
 		F52B2C502BE66073006ACF7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52B2C4F2BE66073006ACF7A /* Assets.xcassets */; };
 		F52B2C532BE66073006ACF7A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F52B2C522BE66073006ACF7A /* Base */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 		F52B2C462BE66071006ACF7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F52B2C482BE66071006ACF7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F52B2C4A2BE66071006ACF7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F52B2C4D2BE66071006ACF7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F52B2C4F2BE66073006ACF7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F52B2C522BE66073006ACF7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F52B2C542BE66073006ACF7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,7 +57,6 @@
 				F52B2C462BE66071006ACF7A /* AppDelegate.swift */,
 				F52B2C482BE66071006ACF7A /* SceneDelegate.swift */,
 				F52B2C4A2BE66071006ACF7A /* ViewController.swift */,
-				F52B2C4C2BE66071006ACF7A /* Main.storyboard */,
 				F52B2C4F2BE66073006ACF7A /* Assets.xcassets */,
 				F52B2C512BE66073006ACF7A /* LaunchScreen.storyboard */,
 				F52B2C542BE66073006ACF7A /* Info.plist */,
@@ -127,7 +124,6 @@
 			files = (
 				F52B2C502BE66073006ACF7A /* Assets.xcassets in Resources */,
 				F52B2C532BE66073006ACF7A /* Base in Resources */,
-				F52B2C4E2BE66071006ACF7A /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +143,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F52B2C4C2BE66071006ACF7A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F52B2C4D2BE66071006ACF7A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F52B2C512BE66073006ACF7A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -295,11 +283,12 @@
 				DEVELOPMENT_TEAM = T89868475G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GHFollowersApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Github Followers";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +296,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abdullaharslan.info.GHFollowersApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,11 +316,12 @@
 				DEVELOPMENT_TEAM = T89868475G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GHFollowersApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Github Followers";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +329,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abdullaharslan.info.GHFollowersApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
