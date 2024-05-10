@@ -21,7 +21,7 @@ class FollowerListVC: UIViewController {
     
     var username: String!
     var collectionView: UICollectionView!
-    var followers: [Follower] = [Follower(login: "abdullaharslan01", avatarUrl: "https://avatars.githubusercontent.com/u/125302932?v=4")]
+    var followers: [Follower] = []
     var dataSource: UICollectionViewDiffableDataSource<Section, Follower>!
 
     var filteredFollowers: [Follower] = []
