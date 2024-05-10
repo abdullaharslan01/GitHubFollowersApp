@@ -10,7 +10,6 @@ import UIKit
 class GFAvatarImageView: UIImageView {
     
     
-    // We are getting instance from manager
     let cache           = NetworkManager.shared.cache
     
     let placeholderImage = UIImage(named: "avatar-placeholder")
@@ -32,10 +31,8 @@ class GFAvatarImageView: UIImageView {
         translatesAutoresizingMaskIntoConstraints = false
     }
     
-    // We can download image from internet
     func downloadImage(from urlString: String) {
         
-        // We are checking cache data with unique key
         let cacheKey = NSString(string: urlString)
         
         if let image = cache.object(forKey: cacheKey) {
@@ -59,7 +56,6 @@ class GFAvatarImageView: UIImageView {
             
             guard let image = UIImage(data: data) else {return}
             
-            // We are caching the image
             self.cache.setObject(image, forKey: cacheKey)
             
             DispatchQueue.main.async { self.image = image}
